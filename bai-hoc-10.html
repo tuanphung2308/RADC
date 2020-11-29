@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:400,700%7CMontserrat:300,400,600,700" rel="stylesheet">
+
+    <link href="icons/fontawesome/css/fontawesome-all.min.css" rel="stylesheet"><!-- FontAwesome Icons -->
+    <link href="icons/Iconsmind__Ultimate_Pack/Line%20icons/styles.min.css" rel="stylesheet">
+    <!-- iconsmind.com Icons -->
+
+
+    <title>SSD - Nền Tảng Học Ngôn Ngữ Kí Hiệu Trực Tiếp</title>
+</head>
+
+<body>
+    <div id="sidebar-bg">
+
+        <header class="sticky-header" id="videohead-pro">
+            <div id="video-logo-background"><a href="dashboard-home.html"><img alt="Logo"
+                        src="images/logo-video-layout.png"></a></div>
+
+            <div id="video-search-header">
+                <div id="search-icon-more"></div>
+                <input aria-label="Search" placeholder="Tìm Kiếm" type="text">
+                <div id="video-search-header-filtering">
+                    <form id="video-search-header-filtering-padding">
+                        <div class="row">
+                            <div class="col-sm extra-padding">
+                                <h5>Độ Khó</h5>
+
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <label class="checkbox-pro-container">Dễ
+                                            <input checked="checked" id="movies-type" type="checkbox">
+                                            <span class="checkmark-pro"></span>
+                                        </label>
+
+                                        <label class="checkbox-pro-container">Trung Bình
+                                            <input id="tv-type" type="checkbox">
+                                            <span class="checkmark-pro"></span>
+                                        </label>
+                                    </div><!-- close .col -->
+                                    <div class="col">
+                                        <label class="checkbox-pro-container">Khó
+                                            <input id="movie-type" type="checkbox">
+                                            <span class="checkmark-pro"></span>
+                                        </label>
+                                    </div><!-- close .col -->
+                                </div><!-- close .row -->
+
+                                <div class="dotted-dividers-pro"></div>
+                            </div><!-- close .col -->
+                            <div class="col-sm extra-padding">
+                                <h5>Chủ Đề:</h5>
+                                <select class="custom-select">
+                                    <option selected>Tất Cả Chủ Đề</option>
+                                    <option value="1">Giao Tiếp Hàng Ngày</option>
+                                    <option value="2">Giao Tiếp Công Việc</option>
+                                    <option value="3">Sân Bay</option>
+                                    <option value="4">Ngân Hàng</option>
+                                    <option value="5">Trường Học</option>
+                                </select>
+                                <div class="dotted-dividers-pro"></div>
+                            </div><!-- close .col -->
+                            <div class="col-sm extra-padding">
+                                <h5>Miền:</h5>
+                                <select class="custom-select">
+                                    <option value="1" selected>Miền Bắc</option>
+                                    <option value="2">Miền Trung</option>
+                                    <option value="3">Miền Nam</option>
+                                </select>
+                                <div class="dotted-dividers-pro"></div>
+                            </div><!-- close .col -->
+                            <div class="col-sm extra-padding extra-range-padding">
+                                <h5>Độ Dài (Phút):</h5>
+                                <input class="range-example-rating-input" max="10" min="0" step="1" type="text"
+                                    value="2,7" />
+                                <!-- JS is under /js/script.jss -->
+                            </div><!-- close .col -->
+                        </div><!-- close .row -->
+                        <div id="video-search-header-buttons">
+                            <a class="btn btn-green-pro" href="#!">Lọc</a>
+                            <a class="btn" href="#!">Làm Mới</a>
+                        </div><!-- close #video-search-header-buttons -->
+                    </form><!-- #video-search-header-filtering-padding -->
+                </div><!-- close #video-search-header-filtering -->
+            </div><!-- close .video-search-header -->
+
+            <div class="noselect" id="mobile-bars-icon-pro"><i class="fas fa-bars"></i></div>
+
+
+            <div id="header-user-profile">
+                <div class="noselect" id="header-user-profile-click">
+                    <img alt="Suzie" src="images/james.png">
+                    <div id="header-username">James Nguyen</div>
+                    <i class="fas fa-angle-down"></i>
+                </div><!-- close #header-user-profile-click -->
+                <div id="header-user-profile-menu">
+                    <ul>
+                        <li><a href="dashboard-profile.html"><span class="icon-User"></span>Hồ Sơ</a></li>
+                        <li><a href="dashboard-favorites.html"><span class="icon-Favorite-Window"></span>Bài Học Yêu
+                                Thích</a>
+                        </li>
+                        <li><a href="dashboard-account.html"><span class="icon-Gears"></span>Thông Tin Tài Khoản</a>
+                        </li>
+                        <li><a href="#!"><span class="icon-Life-Safer"></span>Liên Hệ/ Hỗ Trợ</a></li>
+                        <li><a href="index.html"><span class="icon-Power-3"></span>Đăng Xuất</a></li>
+                    </ul>
+                </div><!-- close #header-user-profile-menu -->
+            </div><!-- close #header-user-profile -->
+
+            <div id="header-user-notification">
+                <div class="noselect" id="header-user-notification-click">
+                    <i class="far fa-bell"></i>
+                    <span class="user-notification-count">2</span>
+                </div><!-- close #header-user-profile-click -->
+                <div id="header-user-notification-menu">
+                    <h3>Thông Báo</h3>
+                    <div id="header-notification-menu-padding">
+                        <ul id="header-user-notification-list">
+                            <li><a href="#!"><img alt="Profile" src="images/system.png">Xin chào, James. Chúc bạn có một
+                                    thời gian vui vẽ.
+                                    <div class="header-user-notify-time">12 tiếng trước</div>
+                                </a></li>
+                            <li><a href="#!"><img alt="Profile" src="images/system.png"> Chúc mừng bạn đã hoàn thành lớp
+                                    học giao tiếp cơ bản
+                                    <div class="header-user-notify-time">5 ngày trước</div>
+                                </a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div><!-- close #header-user-profile-menu -->
+                </div>
+            </div><!-- close #header-user-notification -->
+
+
+            <div class="clearfix"></div>
+
+            <nav id="mobile-navigation-pro">
+
+                <ul id="mobile-menu-pro">
+                    <li>
+                        <a href="dashboard-home.html">
+                            <span class="icon-Old-TV"></span>
+                            Bài Học
+                        </a>
+                    <li>
+                    <li>
+                        <a href="dashboard-playlists.html">
+                            <span class="icon-Movie"></span>
+                            Bộ Sưu Tập
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboard-coming-soon.html">
+                            <span class="icon-Clock"></span>
+                            Sắp Ra Mắt
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <i class="far fa-bell"></i>
+                            <span class="user-notification-count">2</span>
+                            Thông Báo
+                        </a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+
+                <div id="search-mobile-nav-pro">
+                    <input aria-label="Search" placeholder="Tìm Kiếm" type="text">
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <nav id="sidebar-nav">
+            <!-- Add class="sticky-sidebar-js" for auto-height sidebar -->
+            <ul class="sf-menu" id="vertical-sidebar-nav">
+                <li class="normal-item-pro">
+                    <a href="dashboard-home.html">
+                        <span class="icon-Old-TV"></span>
+                        Bài Học
+                    </a>
+                </li>
+                <li class="normal-item-pro">
+                    <a href="dashboard-playlists.html">
+                        <span class="icon-Movie"></span>
+                        Bộ Sưu Tập
+                    </a>
+                </li>
+                <li class="normal-item-pro">
+                    <a href="dashboard-coming-soon.html">
+                        <span class="icon-Clock"></span>
+                        Sắp Ra Mắt
+                    </a>
+                </li>
+
+            </ul>
+            <div class="clearfix"></div>
+        </nav>
+
+
+        <div id="content-sidebar-pro">
+            <div class="content-sidebar-section" style="padding-top: 42px">
+                <h2 class="content-sidebar-sub-header">Bài Học 10</h2>
+                <h1 class="content-sidebar-sub-header">Rất Vui Khi Gặp Bạn</h1>
+                <p>Bài học thứ 10 trong ngôn ngữ ký hiệu</p>
+                <ul class="progression-studios-slider-rating">
+                    <li>Người Mới</li>
+                    <li>Cần Thiết</li>
+                    <li>Ngắn</li>
+                </ul>
+            </div><!-- close .content-sidebar-section -->
+            <div class="content-sidebar-section">
+                <h4 class="content-sidebar-sub-header">Mô Tả</h4>
+                <div class="content-sidebar-short-description">Cách bày tỏ sự vinh hạnh trong ngôn ngữ kí hiệu</div>
+            </div><!-- close .content-sidebar-section -->
+            <div class="content-sidebar-section">
+                <h4 class="content-sidebar-sub-header">Ngày Đăng</h4>
+                <div class="content-sidebar-short-description">22/11/2020</div>
+            </div><!-- close .content-sidebar-section -->
+
+            <div class="content-sidebar-section">
+                <h4 class="content-sidebar-sub-header">Độ Dài</h4>
+                <div class="content-sidebar-short-description">Dưới 10 giây</div>
+            </div><!-- close .content-sidebar-section -->
+
+            <div class="content-sidebar-section">
+                <h4 class="content-sidebar-sub-header">Độ Khó</h4>
+                <div class="content-sidebar-short-description">
+                    <div class="rating-pro">
+                        <label>
+                            <input name="rating-pro" title="3 stars" type="radio" value="3" disabled> 3
+                        </label>
+                        <label>
+                            <input name="rating-pro" title="2 stars" type="radio" value="2" disabled> 2
+                        </label>
+                        <label class="selected">
+                            <input name="rating-pro" title="1 star" type="radio" value="1" class="selected" disabled> 1
+                        </label>
+                    </div>
+                </div>
+            </div><!-- close .content-sidebar-section -->
+
+            <div class="content-sidebar-section">
+                <h4 class="content-sidebar-sub-header">Người Hướng Dẫn</h4>
+                <div class="content-sidebar-short-description">Wang</div>
+            </div><!-- close .content-sidebar-section -->
+
+
+        </div><!-- close #content-sidebar-pro -->
+
+
+        <main id="col-main-with-sidebar">
+
+            <div id="movie-detail-header-pro" style="background-image:url('images/preview/preview-10.png')">
+
+                <div class="progression-studios-slider-more-options">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <ul>
+                        <li><a href="#!">Yêu Thích</a></li>
+                        <li><a href="#!">Xem Sau</a></li>
+                        <li><a href="#!">Chia Sẻ</a></li>
+                        <li><a href="#!">Đóng Góp Ý Kiến</a></li>
+                    </ul>
+                </div>
+
+                <a class="movie-detail-header-play-btn afterglow" href="#VideoLightbox-1"><i
+                        class="fas fa-play"></i></a>
+
+                <video id="VideoLightbox-1" 0width="960" height="540" poster="images/preview/preview-10.png">
+                    <source src="videos\10.mp4" type="video/mp4" />
+                </video>
+            </div><!-- close #movie-detail-header-pro -->
+
+            <div class="dashboard-container" style="padding-top: 42px">
+                <div class="movie-details-section">
+                    <h2>Lời Thoại</h2>
+                    <p>Rất vui khi được gặp bạn.</p>
+                </div><!-- close .movie-details-section -->
+
+                <div class="movie-details-section">
+                    <h2>Bài Học Liên Quan</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="item-listing-container-skrn">
+                                <a href="dashboard-movie-profile.html"><img alt="Listing"
+                                        src="http://via.placeholder.com/500x707"></a>
+                                <div class="item-listing-text-skrn">
+                                    <div class="item-listing-text-skrn-vertical-align">
+                                        <h6><a href="dashboard-movie-profile.html">Bad Neighbors 2</a></h6>
+                                    </div><!-- close .item-listing-text-skrn-vertical-align -->
+                                </div><!-- close .item-listing-text-skrn -->
+                            </div><!-- close .item-listing-container-skrn -->
+                        </div><!-- close .col -->
+
+
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="item-listing-container-skrn">
+                                <a href="dashboard-movie-profile.html"><img alt="Listing"
+                                        src="http://via.placeholder.com/500x707"></a>
+                                <div class="item-listing-text-skrn">
+                                    <div class="item-listing-text-skrn-vertical-align">
+                                        <h6><a href="dashboard-movie-profile.html">Star Wars: Rogue One</a></h6>
+                                    </div><!-- close .item-listing-text-skrn-vertical-align -->
+                                </div><!-- close .item-listing-text-skrn -->
+                            </div><!-- close .item-listing-container-skrn -->
+                        </div><!-- close .col -->
+
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="item-listing-container-skrn">
+                                <a href="dashboard-movie-profile.html"><img alt="Listing"
+                                        src="http://via.placeholder.com/500x707"></a>
+                                <div class="item-listing-text-skrn">
+                                    <div class="item-listing-text-skrn-vertical-align">
+                                        <h6><a href="dashboard-movie-profile.html">The Imitation Game</a></h6>
+                                    </div><!-- close .item-listing-text-skrn-vertical-align -->
+                                </div><!-- close .item-listing-text-skrn -->
+                            </div><!-- close .item-listing-container-skrn -->
+                        </div><!-- close .col -->
+                    </div><!-- close .row -->
+
+                </div><!-- close .movie-details-section -->
+
+            </div><!-- close .dashboard-container -->
+        </main>
+
+    </div><!-- close #sidebar-bg-->
+
+    <!-- Required Framework JavaScript -->
+    <script src="js/libs/jquery-3.3.1.min.js"></script><!-- jQuery -->
+    <script defer src="js/libs/popper.min.js"></script><!-- Bootstrap Popper/Extras JS -->
+    <script defer src="js/libs/bootstrap.min.js"></script><!-- Bootstrap Main JS -->
+    <!-- All JavaScript in Footer -->
+
+    <!-- Additional Plugins and JavaScript -->
+    <script defer src="js/navigation.js"></script><!-- Header Navigation JS Plugin -->
+    <script defer src="js/jquery.flexslider-min.js"></script><!-- FlexSlider JS Plugin -->
+    <script defer src="js/jquery-asRange.min.js"></script><!-- Range Slider JS Plugin -->
+    <script defer src="js/circle-progress.min.js"></script><!-- Circle Progress JS Plugin -->
+    <script defer src="js/afterglow.min.js"></script><!-- Video Player JS Plugin -->
+    <script defer src="js/script.js"></script><!-- Custom Document Ready JS -->
+    <script defer src="js/script-dashboard.js"></script><!-- Custom Document Ready for Dashboard Only JS -->
+    <script defer src="js/custom-video-control.js"></script><!-- Custom Document Ready for Dashboard Only JS -->
+
+
+</body>
+
+</html>

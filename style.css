@@ -1963,7 +1963,7 @@ ul#sidebar-reviews-pro .sidebar-review-time {
 	width:100%;
 	overflow:hidden;
 	position:relative;
-	height:84vh;
+	height:72vh;
 	background-repeat: no-repeat;
 	background-position:center center;
 	background-size: cover;
@@ -2174,8 +2174,8 @@ a.movie-detail-header-play-btn i {
 
 }
 
-.rating-pro > label:hover:before,
-.rating-pro > label:hover ~ label:before,
+/*.rating-pro > label:hover:before,*/
+/*.rating-pro > label:hover ~ label:before,*/
 .rating-pro > label.selected:before,
 .rating-pro > label.selected ~ label:before {
     color: #3db13d;

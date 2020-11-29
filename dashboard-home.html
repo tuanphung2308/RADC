@@ -1,759 +1,404 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMontserrat:300,400,600,700">
-		
-		<link rel="stylesheet" href="icons/fontawesome/css/fontawesome-all.min.css"><!-- FontAwesome Icons -->
-		<link rel="stylesheet" href="icons/Iconsmind__Ultimate_Pack/Line%20icons/styles.min.css"><!-- iconsmind.com Icons -->
-		
-		
-		<title>SKRN - Media Streaming App</title>
-	</head>
-	<body>
-		<div id="sidebar-bg">
-			
-      <header id="videohead-pro" class="sticky-header">
-			<div id="video-logo-background"><a href="dashboard-home.html"><img src="images/logo-video-layout.png" alt="Logo"></a></div>
-			
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMontserrat:300,400,600,700">
+
+	<link rel="stylesheet" href="icons/fontawesome/css/fontawesome-all.min.css"><!-- FontAwesome Icons -->
+	<link rel="stylesheet" href="icons/Iconsmind__Ultimate_Pack/Line%20icons/styles.min.css">
+	<!-- iconsmind.com Icons -->
+
+
+	<title>SSD - Nền Tảng Học Ngôn Ngữ Kí Hiệu Trực Tiếp</title>
+</head>
+
+<body>
+	<div id="sidebar-bg">
+
+		<header class="sticky-header" id="videohead-pro">
+			<div id="video-logo-background"><a href="dashboard-home.html"><img alt="Logo"
+						src="images/logo-video-layout.png"></a></div>
+
 			<div id="video-search-header">
 				<div id="search-icon-more"></div>
-				<input type="text" placeholder="Search for Movies or TV Series" aria-label="Search">
+				<input aria-label="Search" placeholder="Tìm Kiếm" type="text">
 				<div id="video-search-header-filtering">
 					<form id="video-search-header-filtering-padding">
 						<div class="row">
 							<div class="col-sm extra-padding">
-								<h5>Type:</h5>
-								
+								<h5>Độ Khó</h5>
+
 								<div class="row">
 									<div class="col-sm">
-										<label class="checkbox-pro-container">Movies
-										  <input type="checkbox" checked="checked" id="movies-type">
-										  <span class="checkmark-pro"></span>
+										<label class="checkbox-pro-container">Dễ
+											<input checked="checked" id="movies-type" type="checkbox">
+											<span class="checkmark-pro"></span>
 										</label>
-								
-										<label class="checkbox-pro-container">TV Series
-										  <input type="checkbox" id="tv-type">
-										  <span class="checkmark-pro"></span>
+
+										<label class="checkbox-pro-container">Trung Bình
+											<input id="tv-type" type="checkbox">
+											<span class="checkmark-pro"></span>
 										</label>
 									</div><!-- close .col -->
 									<div class="col">
-										<label class="checkbox-pro-container">New Arrivals
-										  <input type="checkbox" id="movie-type">
-										  <span class="checkmark-pro"></span>
-										</label>
-								
-										<label class="checkbox-pro-container">Documentary
-										  <input type="checkbox" id="documentary-type">
-										  <span class="checkmark-pro"></span>
+										<label class="checkbox-pro-container">Khó
+											<input id="movie-type" type="checkbox">
+											<span class="checkmark-pro"></span>
 										</label>
 									</div><!-- close .col -->
 								</div><!-- close .row -->
-								
+
 								<div class="dotted-dividers-pro"></div>
 							</div><!-- close .col -->
 							<div class="col-sm extra-padding">
-								<h5>Genres:</h5>
+								<h5>Chủ Đề:</h5>
 								<select class="custom-select">
-								  <option selected>All Genres</option>
-								  <option value="1">Action</option>
-								  <option value="2">Adventure</option>
-								  <option value="3">Drama</option>
-								  <option value="4">Animation</option>
-								  <option value="5">Documentary</option>
-								  <option value="6">Drama</option>
-								  <option value="7">Horror</option>
-								  <option value="8">Thriller</option>
-								  <option value="9">Fantasy</option>
-								  <option value="10">Romance</option>
-								  <option value="11">Sci-Fi</option>
-								  <option value="12">Western</option>
+									<option selected>Tất Cả Chủ Đề</option>
+									<option value="1">Giao Tiếp Hàng Ngày</option>
+									<option value="2">Giao Tiếp Công Việc</option>
+									<option value="3">Sân Bay</option>
+									<option value="4">Ngân Hàng</option>
+									<option value="5">Trường Học</option>
 								</select>
 								<div class="dotted-dividers-pro"></div>
 							</div><!-- close .col -->
 							<div class="col-sm extra-padding">
-								<h5>Country:</h5>
+								<h5>Miền:</h5>
 								<select class="custom-select">
-								  <option selected>All Countries</option>
-								  <option value="1">Argentina</option>
-								  <option value="2">Australia</option>
-								  <option value="3">Bahamas</option>
-								  <option value="4">Belgium</option>
-								  <option value="5">Brazil</option>
-								  <option value="6">Canada</option>
-								  <option value="7">Chile</option>
-								  <option value="8">China</option>
-								  <option value="9">Denmark</option>
-								  <option value="10">Ecuador</option>
-								  <option value="11">France</option>
-								  <option value="12">Germany</option>
-								  <option value="13">Greece</option>
-								  <option value="14">Guatemala</option>
-								  <option value="15">Italy</option>
-								  <option value="16">Japan</option>
-								  <option value="17">asdfasdf</option>
-								  <option value="18">Korea</option>
-								  <option value="19">Malaysia</option>
-								  <option value="20">Monaco</option>
-								  <option value="21">Morocco</option>
-								  <option value="22">New Zealand</option>
-								  <option value="23">Panama</option>
-								  <option value="24">Portugal</option>
-								  <option value="25">Russia</option>
-								  <option value="26">United Kingdom</option>
-								  <option value="27">United States</option>
+									<option value="1" selected>Miền Bắc</option>
+									<option value="2">Miền Trung</option>
+									<option value="3">Miền Nam</option>
 								</select>
 								<div class="dotted-dividers-pro"></div>
 							</div><!-- close .col -->
 							<div class="col-sm extra-padding extra-range-padding">
-								<h5>Average Rating:</h5>
-				            <input class="range-example-rating-input" type="text" min="0" max="10" value="4,10" step="1" />
+								<h5>Độ Dài (Phút):</h5>
+								<input class="range-example-rating-input" max="10" min="0" step="1" type="text"
+									value="2,7" />
 								<!-- JS is under /js/script.jss -->
 							</div><!-- close .col -->
 						</div><!-- close .row -->
 						<div id="video-search-header-buttons">
-							<a href="#!" class="btn btn-green-pro">Filter Search</a>
-							<a href="#!" class="btn">Reset</a>
+							<a class="btn btn-green-pro" href="#!">Lọc</a>
+							<a class="btn" href="#!">Làm Mới</a>
 						</div><!-- close #video-search-header-buttons -->
 					</form><!-- #video-search-header-filtering-padding -->
 				</div><!-- close #video-search-header-filtering -->
 			</div><!-- close .video-search-header -->
-			
-			<div id="mobile-bars-icon-pro" class="noselect"><i class="fas fa-bars"></i></div>
-			
-			
+
+			<div class="noselect" id="mobile-bars-icon-pro"><i class="fas fa-bars"></i></div>
+
+
 			<div id="header-user-profile">
-				<div id="header-user-profile-click" class="noselect">
-					<img src="images/demo/user-profile.jpg" alt="Suzie">
-					<div id="header-username">Suzie Smith</div><i class="fas fa-angle-down"></i>
+				<div class="noselect" id="header-user-profile-click">
+					<img alt="Suzie" src="images/james.png">
+					<div id="header-username">James Nguyen</div>
+					<i class="fas fa-angle-down"></i>
 				</div><!-- close #header-user-profile-click -->
 				<div id="header-user-profile-menu">
 					<ul>
-						<li><a href="dashboard-profile.html"><span class="icon-User"></span>My Profile</a></li>
-						<li><a href="dashboard-favorites.html"><span class="icon-Favorite-Window"></span>My Favorites</a></li>
-						<li><a href="dashboard-account.html"><span class="icon-Gears"></span>Account Details</a></li>
-						<li><a href="#!"><span class="icon-Life-Safer"></span>Help/Support</a></li>
-						<li><a href="index.html"><span class="icon-Power-3"></span>Log Out</a></li>
+						<li><a href="dashboard-profile.html"><span class="icon-User"></span>Hồ Sơ</a></li>
+						<li><a href="dashboard-favorites.html"><span class="icon-Favorite-Window"></span>Bài Học Yêu
+								Thích</a>
+						</li>
+						<li><a href="dashboard-account.html"><span class="icon-Gears"></span>Thông Tin Tài Khoản</a>
+						</li>
+						<li><a href="#!"><span class="icon-Life-Safer"></span>Liên Hệ/ Hỗ Trợ</a></li>
+						<li><a href="index.html"><span class="icon-Power-3"></span>Đăng Xuất</a></li>
 					</ul>
 				</div><!-- close #header-user-profile-menu -->
 			</div><!-- close #header-user-profile -->
-			
+
 			<div id="header-user-notification">
-				<div id="header-user-notification-click" class="noselect">
+				<div class="noselect" id="header-user-notification-click">
 					<i class="far fa-bell"></i>
-					<span class="user-notification-count">3</span>
+					<span class="user-notification-count">2</span>
 				</div><!-- close #header-user-profile-click -->
 				<div id="header-user-notification-menu">
-					<h3>Notifications</h3>
+					<h3>Thông Báo</h3>
 					<div id="header-notification-menu-padding">
-							<ul id="header-user-notification-list">
-								<li><a href="#!"><img src="images/demo/user-profile-2.jpg" alt="Profile">Lorem ipsum dolor sit amet, consec tetur adipiscing elit. <div class="header-user-notify-time">21 hours ago</div></a></li>
-								<li><a href="#!"><img src="images/demo/user-profile-3.jpg" alt="Profile">Donec vitae lacus id arcu molestie mollis. <div class="header-user-notify-time">3 days ago</div></a></li>
-								<li><a href="#!"><img src="images/demo/user-profile-4.jpg" alt="Profile">Aenean vitae lectus non purus facilisis imperdiet. <div class="header-user-notify-time">5 days ago</div></a></li>
-							</ul>
-							<div class="clearfix"></div>
-						</div><!-- close #header-user-profile-menu -->
-					</div>
-			</div><!-- close #header-user-notification -->
-			
-			
-			
-			<div class="clearfix"></div>
-			
-			<nav id="mobile-navigation-pro">
-			
-				<ul id="mobile-menu-pro">
-	            <li class="current-menu-item">
-	              <a href="dashboard-home.html">
-						<span class="icon-Old-TV"></span>
-	                TV Series
-	              </a>
-	            <li>
-	            <li>
-	              <a href="dashboard-playlists.html">
-						<span class="icon-Movie"></span>
-	                Playlists
-	              </a>
-	            </li>
-	            <li>
-	              <a href="dashboard-coming-soon.html">
-						<span class="icon-Clock"></span>
-	                Coming Soon
-	              </a>
-	            </li>
-	            <li>
-	              <a href="#!">
-						<i class="far fa-bell"></i>
-						<span class="user-notification-count">3</span>
-	                Notifications
-	              </a>
-	            </li>
-				</ul>
-				<div class="clearfix"></div>
-				
-				<div id="search-mobile-nav-pro">
-					<input type="text" placeholder="Search for Movies or TV Series" aria-label="Search">
+						<ul id="header-user-notification-list">
+							<li><a href="#!"><img alt="Profile" src="images/system.png">Xin chào, James. Chúc bạn có một
+									thời gian vui vẽ.
+									<div class="header-user-notify-time">12 tiếng trước</div>
+								</a></li>
+							<li><a href="#!"><img alt="Profile" src="images/system.png"> Chúc mừng bạn đã hoàn thành lớp
+									học giao tiếp cơ bản
+									<div class="header-user-notify-time">5 ngày trước</div>
+								</a></li>
+						</ul>
+						<div class="clearfix"></div>
+					</div><!-- close #header-user-profile-menu -->
 				</div>
-				
-			</nav>
-			
-      </header>
-		
-		
-		
-		<nav id="sidebar-nav"><!-- Add class="sticky-sidebar-js" for auto-height sidebar -->
-            <ul id="vertical-sidebar-nav" class="sf-menu">
-              <li class="normal-item-pro current-menu-item">
-                <a href="dashboard-home.html">
-						<span class="icon-Old-TV"></span>
-                  TV Series
-                </a>
-              </li>
-              <li class="normal-item-pro">
-                <a href="dashboard-playlists.html">
-						<span class="icon-Movie"></span>
-                  Playlists
-                </a>
-              </li>
-              <li class="normal-item-pro">
-                <a href="dashboard-coming-soon.html">
-						<span class="icon-Clock"></span>
-                  Coming Soon
-                </a>
-              </li>
+			</div><!-- close #header-user-notification -->
 
-            </ul>
-				<div class="clearfix"></div>
-		</nav>
-	
-		<main id="col-main">
-			
-			
-			
-			<div class="flexslider progression-studios-dashboard-slider">
-		      <ul class="slides">
-					<li class="progression_studios_animate_left">
-						<div class="progression-studios-slider-dashboard-image-background" style="background-image:url(http://via.placeholder.com/1920x698);">
-							<div class="progression-studios-slider-display-table">
-								<div class="progression-studios-slider-vertical-align">
-								
-									<div class="container">
-										
-										<a class="progression-studios-slider-play-btn afterglow" href="#VideoLightbox-1"><i class="fas fa-play"></i></a>
-										
-							         <video id="VideoLightbox-1" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg?v1" width="960" height="540">
-							             <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.mp4" type="video/mp4">
-							             <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.webm" type="video/webm">
-							         </video>
-										
-								      <div
-								        class="circle-rating-pro"
-								        data-value="0.86"
-								        data-animation-start-value="0.86"
-								        data-size="70"
-								        data-thickness="6"
-								        data-fill="{
-								          &quot;color&quot;: &quot;#42b740&quot;
-								        }"
-								        data-empty-fill="#def6de"
-								        data-reverse="true"
-								      ><span style="color:#42b740;">8.6</span></div>
-									
-										<div class="progression-studios-slider-dashboard-caption-width">
-											<div class="progression-studios-slider-caption-align">
-												<h6>TV Series</h6>
-												<ul class="progression-studios-slider-rating">
-													<li>PG-13</li><li>HD</li>
-												</ul>
-												<h2><a href="dashboard-movie-profile.html">Seven Days in Ibiza</a></h2>
-												<ul class="progression-studios-slider-meta">
-													<li>15 August, 2016 (UK)</li>
-													<li>163 min.</li>
-													<li>Documentary</li>
-												</ul>
-												<p class="progression-studios-slider-description">A sex columnist, Carrie Bradshaw, and her three friends Samantha, Charlotte 
-and Miranda explore  Manhattan's dating scene, chronicling the mating habits of 
-single New Yorkers.</p>
-												
-												<a class="btn btn-green-pro btn-slider-pro btn-shadow-pro afterglow" href="#VideoLightbox-1"><i class="fas fa-play"></i> Watch Trailer</a>
-												
-												
-												<div class="progression-studios-slider-more-options">
-													<i class="fas fa-ellipsis-h"></i>
-													<ul>
-														<li><a href="#!">Add to Favorites</a></li>
-														<li><a href="#!">Add to Watchlist</a></li>
-														<li><a href="#!">Add to Playlist</a></li>
-														<li><a href="#!">Share...</a></li>
-														<li><a href="#!">Write A Review</a></li>
-													</ul>
-												</div>
-												<div class="clearfix"></div>      
-									
-												<h5>Starring</h5>
-												<ul class="progression-studios-staring-slider">
-													<li><a href="#!"><img src="images/demo/user-1.jpg" alt="Starring"></a></li>
-													<li><a href="#!"><img src="images/demo/user-2.jpg" alt="Starring"></a></li>	
-													<li><a href="#!"><img src="images/demo/user-3.jpg" alt="Starring"></a></li>	
-													<li><a href="#!"><img src="images/demo/user-4.jpg" alt="Starring"></a></li>	
-													<li><a href="#!"><img src="images/demo/user-5.jpg" alt="Starring"></a></li>	
-													<li><a href="#!"><img src="images/demo/user-6.jpg" alt="Starring"></a></li>													
-												</ul>
-												
-											</div><!-- close .progression-studios-slider-caption-align -->
-										</div><!-- close .progression-studios-slider-caption-width -->
-									
-									</div><!-- close .container -->
-								
-								</div><!-- close .progression-studios-slider-vertical-align -->
-							</div><!-- close .progression-studios-slider-display-table -->
-						
-							<div class="progression-studios-slider-mobile-background-cover"></div>
-						</div><!-- close .progression-studios-slider-image-background -->
+
+			<div class="clearfix"></div>
+
+			<nav id="mobile-navigation-pro">
+
+				<ul id="mobile-menu-pro">
+					<li>
+						<a href="dashboard-home.html">
+							<span class="icon-Old-TV"></span>
+							Bài Học
+						</a>
+					<li>
+					<li>
+						<a href="dashboard-playlists.html">
+							<span class="icon-Movie"></span>
+							Bộ Sưu Tập
+						</a>
 					</li>
-					<li class="progression_studios_animate_in">
-						<div class="progression-studios-slider-dashboard-image-background" style="background-image:url(http://via.placeholder.com/1920x698);">
-							<div class="progression-studios-slider-display-table">
-								<div class="progression-studios-slider-vertical-align">
-								
-									<div class="container">
-										
-										<a class="progression-studios-slider-play-btn afterglow" href="#VideoLightbox-2"><i class="fas fa-play"></i></a>
-										
-							         <video id="VideoLightbox-2" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg?v1" width="960" height="540">
-							             <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.mp4" type="video/mp4">
-							             <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.webm" type="video/webm">
-							         </video>
-										
-								      <div
-								        class="circle-rating-pro"
-								        data-value="0.82"
-								        data-animation-start-value="0.82"
-								        data-size="70"
-								        data-thickness="6"
-								        data-fill="{
-								          &quot;color&quot;: &quot;#42b740&quot;
-								        }"
-								        data-empty-fill="#203521"
-								        data-reverse="true"
-								      ><span style="color:#42b740;">8.2</span></div>
-									
-										<div class="progression-studios-slider-dashboard-caption-width">
-											<div class="progression-studios-slider-caption-align">
-												<h6 class="light-fonts-pro">TV Series</h6>
-												<ul class="progression-studios-slider-rating">
-													<li>PG-13</li><li>HD</li>
-												</ul>
-												<h2 class="light-fonts-pro"><a href="dashboard-movie-profile.html">Made In America</a></h2>
-												<ul class="progression-studios-slider-meta">
-													<li>15 August, 2016 (UK)</li>
-													<li>163 min.</li>
-													<li>Documentary</li>
-												</ul>
-												<p class="progression-studios-slider-description light-fonts-pro">A sex columnist, Carrie Bradshaw, and her three friends Samantha, Charlotte 
-and Miranda explore  Manhattan's dating scene, chronicling the mating habits of 
-single New Yorkers.</p>
-												
-												<a class="btn btn-green-pro btn-slider-pro afterglow" href="#VideoLightbox-2"><i class="fas fa-play"></i> Watch Trailer</a>
-												<div class="progression-studios-slider-more-options">
-													<i class="fas fa-ellipsis-h"></i>
-													<ul>
-														<li><a href="#!">Add to Favorites</a></li>
-														<li><a href="#!">Add to Watchlist</a></li>
-														<li><a href="#!">Add to Playlist</a></li>
-														<li><a href="#!">Share...</a></li>
-														<li><a href="#!">Write A Review</a></li>
-													</ul>
-												</div>
-												<div class="clearfix"></div>
-												
-												<h5 class="light-fonts-pro">Starring</h5>
-												<ul class="progression-studios-staring-slider">
-													<li><a href="#!"><img src="images/demo/user-1.jpg" alt="Starring"></a></li>
-													<li><a href="#!"><img src="images/demo/user-2.jpg" alt="Starring"></a></li>	
-													<li><a href="#!"><img src="images/demo/user-3.jpg" alt="Starring"></a></li>	
-													<li><a href="#!"><img src="images/demo/user-4.jpg" alt="Starring"></a></li>	
-													<li><a href="#!"><img src="images/demo/user-5.jpg" alt="Starring"></a></li>	
-													<li><a href="#!"><img src="images/demo/user-6.jpg" alt="Starring"></a></li>													
-												</ul>
-												
-											</div><!-- close .progression-studios-slider-caption-align -->
-										</div><!-- close .progression-studios-slider-caption-width -->
-									
-									</div><!-- close .container -->
-								
-								</div><!-- close .progression-studios-slider-vertical-align -->
-							</div><!-- close .progression-studios-slider-display-table -->
-						
-							<div class="progression-studios-slider-mobile-background-cover-dark"></div>
-						</div><!-- close .progression-studios-slider-image-background -->
-					</li>				
+					<li>
+						<a href="dashboard-coming-soon.html">
+							<span class="icon-Clock"></span>
+							Sắp Ra Mắt
+						</a>
+					</li>
+					<li>
+						<a href="#!">
+							<i class="far fa-bell"></i>
+							<span class="user-notification-count">2</span>
+							Thông Báo
+						</a>
+					</li>
 				</ul>
-			</div><!-- close .progression-studios-slider - See /js/script.js file for options -->
+				<div class="clearfix"></div>
 
-			<ul class="dashboard-genres-pro">
-				<li>
-					<img src="images/genres/drama.png" alt="Drama">
-					<h6>Drama</h6>
+				<div id="search-mobile-nav-pro">
+					<input aria-label="Search" placeholder="Tìm Kiếm" type="text">
+				</div>
+
+			</nav>
+
+		</header>
+
+
+		<nav id="sidebar-nav">
+			<!-- Add class="sticky-sidebar-js" for auto-height sidebar -->
+			<ul class="sf-menu" id="vertical-sidebar-nav">
+				<li class="normal-item-pro">
+					<a href="dashboard-home.html">
+						<span class="icon-Old-TV"></span>
+						Bài Học
+					</a>
 				</li>
+				<li class="normal-item-pro">
+					<a href="dashboard-playlists.html">
+						<span class="icon-Movie"></span>
+						Bộ Sưu Tập
+					</a>
+				</li>
+				<li class="normal-item-pro">
+					<a href="dashboard-coming-soon.html">
+						<span class="icon-Clock"></span>
+						Sắp Ra Mắt
+					</a>
+				</li>
+
+			</ul>
+			<div class="clearfix"></div>
+		</nav>
+
+		<main id="col-main">
+			<ul class="dashboard-genres-pro">
 				<li class="active">
+					<img src="images/genres/drama.png" alt="Drama">
+					<h6>Giao Tiếp Cơ Bản</h6>
+				</li>
+				<li>
 					<img src="images/genres/comedy.png" alt="Comedy">
-					<h6>Comedy</h6>
+					<h6>Giao Tiếp Công Việc</h6>
 				</li>
 				<li>
 					<img src="images/genres/action.png" alt="Action">
-					<h6>Action</h6>
+					<h6>Sân Bay</h6>
 				</li>
 				<li>
 					<img src="images/genres/romance.png" alt="Romance">
-					<h6>Romance</h6>
+					<h6>Ngân Hàng</h6>
 				</li>
 				<li>
-					<img src="images/genres/horror.png" alt="Horror">
-					<h6>Horror</h6>
-				</li>
-				<li>
-					<img src="images/genres/fantasy.png" alt="Fantasy">
-					<h6>Fantasy</h6>
-				</li>
-				<li>
-					<img src="images/genres/sci-fi.png" alt="Sci-Fi">
-					<h6>Sci-Fi</h6>
-				</li>
-				<li>
-					<img src="images/genres/thriller.png" alt="Thriller">
-					<h6>Thriller</h6>
-				</li>
-				<li>
-					<img src="images/genres/western.png" alt="Western">
-					<h6>Western</h6>
-				</li>
-				<li>
-					<img src="images/genres/adventure.png" alt="Adventure">
-					<h6>Adventure</h6>
-				</li>
-				<li>
-					<img src="images/genres/animation.png" alt="Animation">
-					<h6>Animation</h6>
-				</li>
-				<li>
-					<img src="images/genres/documentary.png" alt="Documentary">
-					<h6>Documentary</h6>
+					<img src="images/genres/adventure.png" alt="Romance">
+					<h6>Trường Học</h6>
 				</li>
 			</ul>
-			
+
 			<div class="clearfix"></div>
-			
+
 			<div class="dashboard-container">
-				
-				<h4 class="heading-extra-margin-bottom">Comedies</h4>
+
+				<h4 class="heading-extra-margin-bottom">Giao Tiếp Cơ Bản</h4>
 				<div class="row">
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn">
-							<a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
+							<a href="bai-hoc-1.html"><img src="images/preview/preview-1.png" alt="Listing"></a>
 							<div class="item-listing-text-skrn">
-								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">The Wild Things Are</a></h6>
-							      <div
-							        class="circle-rating-pro"
-							        data-value="0.86"
-							        data-animation-start-value="0.86"
-							        data-size="32"
-							        data-thickness="3"
-							        data-fill="{
-							          &quot;color&quot;: &quot;#42b740&quot;
-							        }"
-							        data-empty-fill="#def6de"
-							        data-reverse="true"
-							      ><span style="color:#42b740;">8.6</span></div>
+								<div class="item-listing-text-skrn-vertical-align">
+									<h5 style="padding-top: 12px;"><a href="bai-hoc-1.html">Bài Học 1</a>
+									</h5>
+									<h6>Xin chào</h6>
 								</div><!-- close .item-listing-text-skrn-vertical-align -->
 							</div><!-- close .item-listing-text-skrn -->
 						</div><!-- close .item-listing-container-skrn -->
 					</div><!-- close .col -->
-					
+
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn">
-							<a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
+							<a href="bai-hoc-2.html"><img src="images/preview/preview-2.png" alt="Listing"></a>
 							<div class="item-listing-text-skrn">
-								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Central Intelligence</a></h6>
-							      <div
-							        class="circle-rating-pro"
-							        data-value="0.6"
-							        data-animation-start-value="0.6"
-							        data-size="32"
-							        data-thickness="3"
-							        data-fill="{
-							          &quot;color&quot;: &quot;#ff4141&quot;
-							        }"
-							        data-empty-fill="#ffe1e1"
-							        data-reverse="true"
-							      ><span style="color:#ff4141;">6.0</span></div>
+								<div class="item-listing-text-skrn-vertical-align">
+									<h5 style="padding-top: 12px;"><a href="bai-hoc-2.html">Bài Học
+											2</a>
+									</h5>
+									<h6>Bạn có khỏe không?</h6>
 								</div><!-- close .item-listing-text-skrn-vertical-align -->
 							</div><!-- close .item-listing-text-skrn -->
 						</div><!-- close .item-listing-container-skrn -->
 					</div><!-- close .col -->
-					
-					
+
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn">
-							<a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
+							<a href="bai-hoc-3.html"><img src="images/preview/preview-3.png" alt="Listing"></a>
 							<div class="item-listing-text-skrn">
-								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Zoolander No. 2</a></h6>
-							      <div
-							        class="circle-rating-pro"
-							        data-value="0.86"
-							        data-animation-start-value="0.86"
-							        data-size="32"
-							        data-thickness="3"
-							        data-fill="{
-							          &quot;color&quot;: &quot;#42b740&quot;
-							        }"
-							        data-empty-fill="#def6de"
-							        data-reverse="true"
-							      ><span style="color:#42b740;">8.6</span></div>
+								<div class="item-listing-text-skrn-vertical-align">
+									<h5 style="padding-top: 12px;"><a href="bai-hoc-3.html">Bài Học
+											3</a>
+									</h5>
+									<h6>Tôi khỏe, cảm ơn bạn</h6>
 								</div><!-- close .item-listing-text-skrn-vertical-align -->
 							</div><!-- close .item-listing-text-skrn -->
 						</div><!-- close .item-listing-container-skrn -->
 					</div><!-- close .col -->
-					
+
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn">
-							<a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
+							<a href="bai-hoc-4.html"><img src="images/preview/preview-4.png" alt="Listing"></a>
 							<div class="item-listing-text-skrn">
-								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Bad Neighbors 2</a></h6>
-							      <div
-							        class="circle-rating-pro"
-							        data-value="0.72"
-							        data-animation-start-value="0.72"
-							        data-size="32"
-							        data-thickness="3"
-							        data-fill="{
-							          &quot;color&quot;: &quot;#42b740&quot;
-							        }"
-							        data-empty-fill="#def6de"
-							        data-reverse="true"
-							      ><span style="color:#42b740;">7.2</span></div>
+								<div class="item-listing-text-skrn-vertical-align">
+									<h5 style="padding-top: 12px;"><a href="bai-hoc-4.html">Bài Học
+											4</a>
+									</h5>
+									<h6>Tạm biệt, hẹn gặp lại</h6>
 								</div><!-- close .item-listing-text-skrn-vertical-align -->
 							</div><!-- close .item-listing-text-skrn -->
 						</div><!-- close .item-listing-container-skrn -->
 					</div><!-- close .col -->
-					
-					
+
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn">
-							<a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
+							<a href="bai-hoc-5.html"><img src="images/preview/preview-5.png" alt="Listing"></a>
 							<div class="item-listing-text-skrn">
-								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Star Wars: Rogue One</a></h6>
-							      <div
-							        class="circle-rating-pro"
-							        data-value="0.86"
-							        data-animation-start-value="0.86"
-							        data-size="32"
-							        data-thickness="3"
-							        data-fill="{
-							          &quot;color&quot;: &quot;#42b740&quot;
-							        }"
-							        data-empty-fill="#def6de"
-							        data-reverse="true"
-							      ><span style="color:#42b740;">8.6</span></div>
+								<div class="item-listing-text-skrn-vertical-align">
+									<h5 style="padding-top: 12px;"><a href="bai-hoc-5.html">Bài Học
+											5</a>
+									</h5>
+									<h6>Tôi cũng vậy</h6>
 								</div><!-- close .item-listing-text-skrn-vertical-align -->
 							</div><!-- close .item-listing-text-skrn -->
 						</div><!-- close .item-listing-container-skrn -->
 					</div><!-- close .col -->
-					
+
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn">
-							<a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
+							<a href="bai-hoc-6.html"><img src="images/preview/preview-6.png" alt="Listing"></a>
 							<div class="item-listing-text-skrn">
-								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">The Imitation Game</a></h6>
-							      <div
-							        class="circle-rating-pro"
-							        data-value="0.6"
-							        data-animation-start-value="0.6"
-							        data-size="32"
-							        data-thickness="3"
-							        data-fill="{
-							          &quot;color&quot;: &quot;#ff4141&quot;
-							        }"
-							        data-empty-fill="#ffe1e1"
-							        data-reverse="true"
-							      ><span style="color:#ff4141;">6.0</span></div>
+								<div class="item-listing-text-skrn-vertical-align">
+									<h5 style="padding-top: 12px;"><a href="bai-hoc-6.html">Bài Học
+											6</a>
+									</h5>
+									<h6>Nhà của bạn ở đâu?</h6>
 								</div><!-- close .item-listing-text-skrn-vertical-align -->
 							</div><!-- close .item-listing-text-skrn -->
 						</div><!-- close .item-listing-container-skrn -->
 					</div><!-- close .col -->
-					
-					
+
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn">
-							<a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
+							<a href="bai-hoc-7.html"><img src="images/preview/preview-7.png" alt="Listing"></a>
 							<div class="item-listing-text-skrn">
-								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Fantastic Beasts</a></h6>
-							      <div
-							        class="circle-rating-pro"
-							        data-value="0.86"
-							        data-animation-start-value="0.86"
-							        data-size="32"
-							        data-thickness="3"
-							        data-fill="{
-							          &quot;color&quot;: &quot;#42b740&quot;
-							        }"
-							        data-empty-fill="#def6de"
-							        data-reverse="true"
-							      ><span style="color:#42b740;">8.6</span></div>
+								<div class="item-listing-text-skrn-vertical-align">
+									<h5 style="padding-top: 12px;"><a href="bai-hoc-7.html">Bài Học
+											7</a>
+									</h5>
+									<h6>Tôi ở Thành Phố Hồ Chí Minh</h6>
 								</div><!-- close .item-listing-text-skrn-vertical-align -->
 							</div><!-- close .item-listing-text-skrn -->
 						</div><!-- close .item-listing-container-skrn -->
 					</div><!-- close .col -->
-					
+
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn">
-							<a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
+							<a href="bai-hoc-8.html"><img src="images/preview/preview-8.png" alt="Listing"></a>
 							<div class="item-listing-text-skrn">
-								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Edge of Tomorrow</a></h6>
-							      <div
-							        class="circle-rating-pro"
-							        data-value="0.72"
-							        data-animation-start-value="0.72"
-							        data-size="32"
-							        data-thickness="3"
-							        data-fill="{
-							          &quot;color&quot;: &quot;#42b740&quot;
-							        }"
-							        data-empty-fill="#def6de"
-							        data-reverse="true"
-							      ><span style="color:#42b740;">7.2</span></div>
+								<div class="item-listing-text-skrn-vertical-align">
+									<h5 style="padding-top: 12px;"><a href="bai-hoc-8.html">Bài Học
+											8</a>
+									</h5>
+									<h6>Bạn bao nhiêu tuổi?</h6>
 								</div><!-- close .item-listing-text-skrn-vertical-align -->
 							</div><!-- close .item-listing-text-skrn -->
 						</div><!-- close .item-listing-container-skrn -->
 					</div><!-- close .col -->
-					
+
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn">
-							<a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
+							<a href="bai-hoc-9.html"><img src="images/preview/preview-9.png" alt="Listing"></a>
 							<div class="item-listing-text-skrn">
-								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Allegiant</a></h6>
-							      <div
-							        class="circle-rating-pro"
-							        data-value="0.86"
-							        data-animation-start-value="0.86"
-							        data-size="32"
-							        data-thickness="3"
-							        data-fill="{
-							          &quot;color&quot;: &quot;#42b740&quot;
-							        }"
-							        data-empty-fill="#def6de"
-							        data-reverse="true"
-							      ><span style="color:#42b740;">8.6</span></div>
+								<div class="item-listing-text-skrn-vertical-align">
+									<h5 style="padding-top: 12px;"><a href="bai-hoc-9.html">Bài Học
+											9</a>
+									</h5>
+									<h6>Tôi 30 tuổi</h6>
 								</div><!-- close .item-listing-text-skrn-vertical-align -->
 							</div><!-- close .item-listing-text-skrn -->
 						</div><!-- close .item-listing-container-skrn -->
 					</div><!-- close .col -->
-					
+
 					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 						<div class="item-listing-container-skrn">
-							<a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
+							<a href="bai-hoc-10.html"><img src="images/preview/preview-10.png" alt="Listing"></a>
 							<div class="item-listing-text-skrn">
-								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Lo and Behold</a></h6>
-							      <div
-							        class="circle-rating-pro"
-							        data-value="0.6"
-							        data-animation-start-value="0.6"
-							        data-size="32"
-							        data-thickness="3"
-							        data-fill="{
-							          &quot;color&quot;: &quot;#ff4141&quot;
-							        }"
-							        data-empty-fill="#ffe1e1"
-							        data-reverse="true"
-							      ><span style="color:#ff4141;">6.0</span></div>
+								<div class="item-listing-text-skrn-vertical-align">
+									<h5 style="padding-top: 12px;"><a href="bai-hoc-10.html">Bài Học
+											10</a>
+									</h5>
+									<h6>Rất vui khi gặp bạn</h6>
 								</div><!-- close .item-listing-text-skrn-vertical-align -->
 							</div><!-- close .item-listing-text-skrn -->
 						</div><!-- close .item-listing-container-skrn -->
 					</div><!-- close .col -->
-					
-					
-					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
-						<div class="item-listing-container-skrn">
-							<a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
-							<div class="item-listing-text-skrn">
-								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Drive</a></h6>
-							      <div
-							        class="circle-rating-pro"
-							        data-value="0.86"
-							        data-animation-start-value="0.86"
-							        data-size="32"
-							        data-thickness="3"
-							        data-fill="{
-							          &quot;color&quot;: &quot;#42b740&quot;
-							        }"
-							        data-empty-fill="#def6de"
-							        data-reverse="true"
-							      ><span style="color:#42b740;">8.6</span></div>
-								</div><!-- close .item-listing-text-skrn-vertical-align -->
-							</div><!-- close .item-listing-text-skrn -->
-						</div><!-- close .item-listing-container-skrn -->
-					</div><!-- close .col -->
-					
-					<div class="col-12 col-md-6 col-lg-4 col-xl-3">
-						<div class="item-listing-container-skrn">
-							<a href="dashboard-movie-profile.html"><img src="http://via.placeholder.com/500x707" alt="Listing"></a>
-							<div class="item-listing-text-skrn">
-								<div class="item-listing-text-skrn-vertical-align"><h6><a href="dashboard-movie-profile.html">Nightcrawler</a></h6>
-							      <div
-							        class="circle-rating-pro"
-							        data-value="0.72"
-							        data-animation-start-value="0.72"
-							        data-size="32"
-							        data-thickness="3"
-							        data-fill="{
-							          &quot;color&quot;: &quot;#42b740&quot;
-							        }"
-							        data-empty-fill="#def6de"
-							        data-reverse="true"
-							      ><span style="color:#42b740;">7.2</span></div>
-								</div><!-- close .item-listing-text-skrn-vertical-align -->
-							</div><!-- close .item-listing-text-skrn -->
-						</div><!-- close .item-listing-container-skrn -->
-					</div><!-- close .col -->
-					
+
+
 				</div><!-- close .row -->
-				
-				
-				<ul class="page-numbers">
-					<li><a class="previous page-numbers" href="#!"><i class="fas fa-chevron-left"></i></a></li>
-					<li><span class="page-numbers current">1</span></li>
-					<li><a class="page-numbers" href="#!">2</a></li>
-					<li><a class="page-numbers" href="#!">3</a></li>
-					<li><a class="page-numbers" href="#!">4</a></li>
-					<li><a class="next page-numbers" href="#!"><i class="fas fa-chevron-right"></i></a></li>
-				</ul>
-				
-						
 			</div><!-- close .dashboard-container -->
 		</main>
-		
-		
-		</div><!-- close #sidebar-bg-->
-		
-		<!-- Required Framework JavaScript -->
-		<script src="js/libs/jquery-3.3.1.min.js"></script><!-- jQuery -->
-		<script src="js/libs/popper.min.js" defer></script><!-- Bootstrap Popper/Extras JS -->
-		<script src="js/libs/bootstrap.min.js" defer></script><!-- Bootstrap Main JS -->
-		<!-- All JavaScript in Footer -->
-		
-		<!-- Additional Plugins and JavaScript -->
-		<script src="js/navigation.js" defer></script><!-- Header Navigation JS Plugin -->
-		<script src="js/jquery.flexslider-min.js" defer></script><!-- FlexSlider JS Plugin -->
-		<script src="js/jquery-asRange.min.js" defer></script><!-- Range Slider JS Plugin -->
-		<script src="js/circle-progress.min.js" defer></script><!-- Circle Progress JS Plugin -->
-		<script src="js/afterglow.min.js" defer></script><!-- Video Player JS Plugin -->
-		<script src="js/script.js" defer></script><!-- Custom Document Ready JS -->
-		<script src="js/script-dashboard.js" defer></script><!-- Custom Document Ready for Dashboard Only JS -->
-		
-		
-	</body>
+
+
+	</div><!-- close #sidebar-bg-->
+
+	<!-- Required Framework JavaScript -->
+	<script src="js/libs/jquery-3.3.1.min.js"></script><!-- jQuery -->
+	<script src="js/libs/popper.min.js" defer></script><!-- Bootstrap Popper/Extras JS -->
+	<script src="js/libs/bootstrap.min.js" defer></script><!-- Bootstrap Main JS -->
+	<!-- All JavaScript in Footer -->
+
+	<!-- Additional Plugins and JavaScript -->
+	<script src="js/navigation.js" defer></script><!-- Header Navigation JS Plugin -->
+	<script src="js/jquery.flexslider-min.js" defer></script><!-- FlexSlider JS Plugin -->
+	<script src="js/jquery-asRange.min.js" defer></script><!-- Range Slider JS Plugin -->
+	<script src="js/circle-progress.min.js" defer></script><!-- Circle Progress JS Plugin -->
+	<script src="js/afterglow.min.js" defer></script><!-- Video Player JS Plugin -->
+	<script src="js/script.js" defer></script><!-- Custom Document Ready JS -->
+	<script src="js/script-dashboard.js" defer></script><!-- Custom Document Ready for Dashboard Only JS -->
+
+
+</body>
+
 </html>
