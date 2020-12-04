@@ -285,6 +285,7 @@ jQuery(document).ready(function ($) {
             //stop microphone access
             gumStream.getAudioTracks()[0].stop();
             rec.exportWAV(createDownloadLink);
+            window.location.href="xin-chao.html"
         }
 
         $(this).find("i").toggleClass("fa-microphone fa-stop");
