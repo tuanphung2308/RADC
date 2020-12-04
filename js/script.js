@@ -248,6 +248,56 @@ jQuery(document).ready(function ($) {
     }
 
     $("#micro-button").on("click", function () {
+        console.log("clicked")
+        var icon = $(this).find("i");
+        if (icon.hasClass("fa-microphone")) {
+            var constraints = { audio: true, video: false };
+            navigator.mediaDevices
+                .getUserMedia(constraints)
+                .then(function (stream) {
+                    console.log(
+                        "getUserMedia() success, stream created, initializing Recorder.js ..."
+                    );
+                    audioContext = new AudioContext();
+
+                    /*  assign to gumStream for later use  */
+                    gumStream = stream;
+
+                    /* use the stream */
+                    input = audioContext.createMediaStreamSource(stream);
+
+                    /* 
+					Create the Recorder object and configure to record mono sound (1 channel)
+					Recording 2 channels  will double the file size
+				*/
+                    rec = new Recorder(input, { numChannels: 1 });
+
+                    //start the recording process
+                    rec.record();
+                })
+                .catch(function (err) {
+                    //enable the record button if getUserMedia() fails
+                    $(this).find("i").toggleClass("fa-microphone fa-stop");
+                    return;
+                });
+        } else {
+            rec.stop();
+
+            //stop microphone access
+            gumStream.getAudioTracks()[0].stop();
+            rec.exportWAV(createDownloadLink);
+            window.location.href="xin-chao.html"
+        }
+
+        $(this).find("i").toggleClass("fa-microphone fa-stop");
+        // if ($(this).find("i").text() == "add") {
+        //     $(this).find("i").text("remove");
+        // } else {
+        //     $(this).find("i").text("add");
+        // }
+    });
+    $("#micro-button.btn").on("click", function () {
+        console.log("clicked")
         var icon = $(this).find("i");
         if (icon.hasClass("fa-microphone")) {
             var constraints = { audio: true, video: false };
@@ -296,3 +346,4 @@ jQuery(document).ready(function ($) {
         // }
     });
 });
+
